@@ -1,3 +1,5 @@
+@import url(colors.css);
+
 /*
 
 RESET
@@ -16,8 +18,16 @@ GENERAL
 
 */
 
+
+
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /*
@@ -25,7 +35,28 @@ body{
 HEADER
 
 */
+header{
+    background-color: #0084FF;
+    padding: 10px 0;
+}
 
+.header-main-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container{
+    display: none;
+}
+
+.hamburger{
+    padding: 10px 0;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 1.5em;
+}
 
 
 
@@ -35,7 +66,98 @@ MAIN
 
 */
 
+main section{
+    padding: 40px 0;
+}
 
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.card{
+    width: calc(100% - 20px);
+    margin: 0 10px 20px;
+}
+
+.card > div{
+    padding: 10px;
+}
+
+.card-main-content{
+    background-color:#AEDAFF
+ 
+}
+
+.image-phone{
+    width: 50%;
+    margin: 20px 0 -15px 100px;
+} 
+
+.text-card h3{
+    color: #0084FF;
+    text-align: left;
+    padding:20px 0 20px 30px;
+}
+
+.text-card p{
+    text-align: left;
+    padding:20px 30px;
+}
+
+.button-blue{
+    background-color: #0084FF;
+    border-color: #0084FF;
+    border-radius: 40px;
+    padding: 5px 30px;
+    color: white;
+    margin: 20px 0 10px 120px;
+}
+
+.card-main-content h3, .fa-solid{
+    text-align: center;
+    color: #0084FF;
+}
+
+.fa-file-code, .fa-compassdrafting .fa-laptop-code .fa-bullhorn{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.card-main-content p{
+    text-align: center;
+}
+
+
+
+
+
+.secondary-color{
+    background-color: #9792E4;
+}
+
+.planning-development{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.target{
+    margin: 20px 0;
+}
+
+.about-us-and-find-me{
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.about-us{
+    width: 100%;
+}
+
+.find-me{
+    width: 100%;
+}
 
 /*
 
@@ -73,6 +195,34 @@ TABLET
 
     */
 
+.card{
+    width: calc((100% / 3) - 20px);
+   
+}
+
+.card:first-child{
+    width: calc(((100% / 3) * 2) - 20px);
+    
+}
+
+
+.secondary-color .cards .card{
+    width: calc((100% / 2) - 20px);
+}
+
+.about-us-and-find-me{
+    display: flex;
+}
+
+.about-us{
+    width: 60%;
+}
+
+.find-me{
+    width: 40%;
+}
+
+
 
     /*
 
@@ -94,14 +244,73 @@ DESKTOP
     HEADER FOR DESKTOP
 
     */
+    .hamburger{
+        display: none;
+    }
 
+    .nav-container{
+        display: block;
+    }
+
+    .header-main-content .nav-container ul li {
+        display: inline-block;
+    }
+
+    .header-main-content .nav-container ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+
+    }
+
+    .nav-container ul{
+        padding: 10px 0;
+    }
+
+    .button{
+        padding: 5px;
+        border-radius: 40px;
+        border-color: white;
+    }
+    
 
     /*
 
     MAIN FOR DESKTOP
 
     */
+    .card-main-content:first-child{
+        display: flex;
+    }
 
+    .card-main-content:first-child > div{
+        width: calc(100% / 2);
+    }
+
+    .planning-develompent{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .planning-development > div{
+        width: calc(100% / 2);
+    }
+
+    .secondary-color .cards .card{
+        width: calc((100% / 3) - 20px);
+    }
+
+    .about-us-and-find-me{
+        display: flex;
+    }
+
+    .about-us{
+        width: 70%;
+    }
+
+    .find-me{
+        width: 30%;
+    }
 
     /*
 
